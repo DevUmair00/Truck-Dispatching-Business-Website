@@ -13,7 +13,7 @@
 
       <!-- Navbar -->
 
-      <nav id="NavBar" class="p-3 bg-blue-900 flex items-center justify-between shadow-orange-900 shadow-2xl">
+      <nav id="NavBar" class="sticky top-0 p-3 bg-blue-900 flex items-center justify-between shadow-orange-900 shadow-2xl">
          
           <a href="#" class="flex gap-2 items-center">
             <img class="object-center h-10" src="/Assests/Logo.png" alt="Dispatch Pro">
@@ -74,11 +74,82 @@
 
       </nav>
 
+      <!-- Main Content -->
       <main>
-        
+       
+        <!-- heroSection -->
+        <section id="heroSection" 
+          class="min-h-screen bg-[#0F2564] flex flex-col gap-13
+            lg:grid grid-cols-2 lg:gap-8 items-center px-12 py-16">
+
+          <!-- Left: Text content -->
+          <div class="flex flex-col items-start gap-5">
+
+            <span class="bg-gray-700 text-gray-400 rounded-full text-sm px-4 py-1">
+              24/7 Dispatch Services Available
+            </span>
+
+            <h1 class="text-white font-bold text-5xl leading-tight">
+              Professional Truck Dispatching Solutions
+            </h1>
+
+            <p class="text-gray-400 text-lg leading-relaxed">
+              We handle load booking, route planning, and driver support — so you
+              can focus on the road. Serving owner-operators and fleets nationwide.
+            </p>
+
+            <div class="flex gap-3">
+              <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold text-base rounded-md px-6 py-3">
+                Get Free Quote
+              </button>
+              <button class="border border-white/40 hover:bg-gray-700 text-white font-semibold text-base rounded-md px-6 py-3">
+                Register as Driver
+              </button>
+            </div>
+
+            <ul class="flex gap-8 text-gray-400 text-sm">
+              <li>✓ No setup fees</li>
+              <li>✓ Cancel anytime</li>
+              <li>✓ Dedicated dispatcher</li>
+            </ul>            
+          </div>
+
+           <hr class="lg:hidden inline text-white h-2 p-3 w-full my-10">
+
+          <!-- Right: Quote form -->
+
+          <div class="bg-white/[0.08] border border-white/15 rounded-xl p-6 w-full">
+            
+            <form class="flex flex-col gap-3">
+
+              <h3 class="text-white font-bold text-xl mb-1">Get an Instant Quote</h3>
+
+              <input type="text" placeholder="Your Name"
+                class="w-full bg-white/10 border border-white/20 rounded-md px-3 py-2.5 text-white placeholder-white/40 text-sm outline-none focus:border-orange-500" />
+
+              <input type="tel" placeholder="Phone Number"
+                class="w-full bg-white/10 border border-white/20 rounded-md px-3 py-2.5 text-white placeholder-white/40 text-sm outline-none focus:border-orange-500" />
+
+              <input type="text" placeholder="Truck Type (Dry Van, Flatbed...)"
+                class="w-full bg-white/10 border border-white/20 rounded-md px-3 py-2.5 text-white placeholder-white/40 text-sm outline-none focus:border-orange-500" />
+
+              <input type="text" placeholder="Operating State(s)"
+                class="w-full bg-white/10 border border-white/20 rounded-md px-3 py-2.5 text-white placeholder-white/40 text-sm outline-none focus:border-orange-500" />
+
+              <button type="submit"
+                class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-base rounded-md px-6 py-3 mt-1">
+                Request Callback →
+              </button>
+
+              <p class="text-white/30 text-xs text-center">We respond within 30 minutes</p>
+
+            </form>
+            
+          </div>
+
+        </section>
+
       </main>
-
-
 
       <script src="/JS/script.js"></script>
 </body>
