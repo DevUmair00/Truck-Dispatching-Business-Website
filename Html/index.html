@@ -1,23 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/Src/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <title>Document</title>
 </head>
-<body class="bg-sky-300">
-  <nav class="bg-indigo-100 shadow-xl">
-    <div class="max-w-7xl mx-auto px-4">      
-      <ul class="flex justify-center items-center gap-10 space-x-8 h-14 text-gray-800 font-medium">
-        <li class="hover:text-blue-600 cursor-pointer transition">Home</li>
-        <li class="hover:text-blue-600 cursor-pointer transition">About Us</li>
-        <li class="hover:text-blue-600 cursor-pointer transition">Services</li>
-        <li class="hover:text-blue-600 cursor-pointer transition">Pricing</li>
-        <li class="hover:text-blue-600 cursor-pointer transition">Registration</li>
-      </ul>
-    </div>
-  </nav>
 
-  </body>
+<body class="bg-sky-300">
+
+      <!-- Navbar -->
+
+      <nav id="NavBar" class="p-3 bg-blue-900 flex items-center justify-between shadow-orange-900 shadow-2xl">
+         
+          <a href="#" class="flex gap-2 items-center">
+            <img class="object-center h-10" src="/Assests/Logo.png" alt="Dispatch Pro">
+            <Span class="text-lg font-medium font-display text-white">Dispatch Pro</Span>
+          </a>
+
+          <div id="navItems">
+            <ul class="hidden md:flex justify-between items-center lg:gap-9 md:gap-7 gap-4 text-white font-medium">
+              <li class="hover:text-gray-300"><a href="#">Home</a></li>
+              <li class="hover:text-gray-300"><a href="#">About Us</a></li>
+              <li class="hover:text-gray-300"><a href="#">Services</a></li>
+              <li class="hover:text-gray-300"><a href="#">Pricing</a></li>
+              <li class="hover:text-gray-300"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <button id="quoteBtn" class="hidden md:block 1 bg-orange-500 hover:bg-orange-600 hover:font-medium rounded-md px-4 py-2">
+          <span>Get Quote</span>
+          &nbsp;
+          <i class="fa-solid fa-arrow-right"></i></button>
+      
+          <button id="showDialogBtn" class="md:hidden"  onclick="handleMenu()">
+            <i class="fa-solid fa-bars text-white"></i>
+          </button>
+
+
+          <div  id="navDialog" class="hidden md:hidden z-10 fixed bg-blue-900 inset-0 p-3  shadow-orange-900 shadow-5xl">
+
+              <div id="dialogContent" class="flex justify-between">
+                  <a href="#" class="flex gap-2 items-center">
+                    <img class="object-center h-10" src="/Assests/Logo.png" alt="Dispatch Pro">
+                    <Span class="text-lg font-medium font-display text-white">Dispatch Pro</Span>
+                  </a>
+
+                  <button id="closeDialogBtn" class="block" onclick="handleMenu()">
+                        <i class="fa-solid fa-xmark text-white text-2xl"></i>
+                  </button>
+              </div>
+
+              <div id="dialogItems" class="mt-5">
+                <ul>
+                  <li><a href="#" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-blue-800 ">Home</a></li>
+                  <li><a href="#" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-blue-800 ">About Us</a></li>
+                  <li><a href="#" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-blue-800 ">Services</a></li>
+                  <li><a href="#" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-blue-800 ">Pricing</a></li>
+                  <li><a href="#" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-blue-800 ">Contact</a></li>
+                </ul>
+              </div>
+
+              <hr class="text-white">
+
+              <button id="quoteBtn" class="bg-orange-500 hover:bg-orange-600 hover:font-medium rounded-md px-4 py-2 mt-5 ml-4">
+              <span>Get Quote</span>
+              &nbsp;
+              <i class="fa-solid fa-arrow-right"></i></button>
+
+          </div>
+
+      </nav>
+
+      <main>
+        
+      </main>
+
+
+
+      <script src="/JS/script.js"></script>
+</body>
 </html>
