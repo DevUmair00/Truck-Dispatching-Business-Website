@@ -4,16 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Src/input.css">
   <link rel="stylesheet" href="/Src/output.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <title>Document</title>
 </head>
 
-<body class="bg-sky-300">
+<body class="text-text-main">
 
       <!-- Navbar -->
 
-      <nav id="NavBar" class="sticky top-0 p-3 bg-blue-900 flex items-center justify-between shadow-orange-900 shadow-2xl">
+      <nav id="NavBar" class="sticky top-0 p-3 flex items-center justify-between bg-primary shadow-orange-900 shadow-2xl">
          
           <a href="#" class="flex gap-2 items-center">
             <img class="object-center h-10" src="/Assests/Logo.png" alt="Dispatch Pro">
@@ -30,7 +31,7 @@
             </ul>
           </div>
 
-          <button id="quoteBtn" class="hidden md:block 1 bg-orange-500 hover:bg-orange-600 hover:font-medium rounded-md px-4 py-2">
+          <button id="quoteBtn1" class="hidden md:block 1 bg-secondary hover:bg-secondary-hover hover:font-medium rounded-md px-4 py-2">
           <span>Get Quote</span>
           &nbsp;
           <i class="fa-solid fa-arrow-right"></i></button>
@@ -40,7 +41,7 @@
           </button>
 
 
-          <div  id="navDialog" class="hidden md:hidden z-10 fixed bg-blue-900 inset-0 p-3  shadow-orange-900 shadow-5xl">
+          <div  id="navDialog" class="bg-primary-dark hidden md:hidden z-10 fixed inset-0 p-3  shadow-orange-900 shadow-5xl">
 
               <div id="dialogContent" class="flex justify-between">
                   <a href="#" class="flex gap-2 items-center">
@@ -55,17 +56,17 @@
 
               <div id="dialogItems" class="mt-5">
                 <ul>
-                  <li><a href="#" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-blue-800 ">Home</a></li>
-                  <li><a href="#" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-blue-800 ">About Us</a></li>
-                  <li><a href="#" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-blue-800 ">Services</a></li>
-                  <li><a href="#" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-blue-800 ">Pricing</a></li>
-                  <li><a href="#" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-blue-800 ">Contact</a></li>
+                  <li><a href="#" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary ">Home</a></li>
+                  <li><a href="#" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary   ">About Us</a></li>
+                  <li><a href="#" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary">Services</a></li>
+                  <li><a href="#" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary ">Pricing</a></li>
+                  <li><a href="#" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary ">Contact</a></li>
                 </ul>
               </div>
 
               <hr class="text-white">
 
-              <button id="quoteBtn" class="bg-orange-500 hover:bg-orange-600 hover:font-medium rounded-md px-4 py-2 mt-5 ml-4">
+              <button id="quoteBtn2" class="bg-secondary hover:bg-secondary-hover hover:font-medium rounded-md px-4 py-2 mt-5 ml-4">
               <span>Get Quote</span>
               &nbsp;
               <i class="fa-solid fa-arrow-right"></i></button>
@@ -75,34 +76,34 @@
       </nav>
 
       <!-- Main Content -->
-      <main>
+      <main class="text-white">
        
         <!-- heroSection -->
         <section id="heroSection"   
-          class="min-h-screen bg-[#0F2564] flex flex-col gap-13
+          class="bg-primary-deeper min-h-screen flex flex-col gap-14
             lg:grid grid-cols-2 lg:gap-8 items-center px-12 py-16">
 
           <!-- Left: Text content -->
           <div class="flex flex-col items-start gap-5">
 
-            <span class=" shadow-md hover:shadow-xl shadow-orange-800 hover:shadow-gray-900 bg-gray-700 text-gray-400 rounded-full text-sm px-4 py-1 hover:-translate-y-1 transition">
+            <span class=" shadow-md hover:shadow-xl shadow-orange-800 hover:shadow-gray-900 bg-text-muted text-gray-400 rounded-full text-sm px-4 py-1 hover:-translate-y-1 transition">
               24/7 Dispatch Services Available
             </span>
 
-            <h1 class="text-white font-bold text-5xl leading-tight">
+            <h1 class="font-bold text-5xl leading-tight">
               Professional Truck Dispatching Solutions
             </h1>
 
-            <p class="text-gray-400 text-lg leading-relaxed">
+            <p class="text-text-muted text-lg leading-relaxed">
               We handle load booking, route planning, and driver support — so you
               can focus on the road. Serving owner-operators and fleets nationwide.
             </p>
 
             <div class="flex gap-3">
-              <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold text-base rounded-md px-6 py-3">
+              <button class="bg-secondary hover:bg-secondary-hover  font-bold text-base rounded-md px-6 py-3">
                 Get Free Quote
               </button>
-              <button class="border border-white/40 hover:bg-gray-700 text-white font-semibold text-base rounded-md px-6 py-3">
+              <button class="border border-white/40 hover:bg-text-muted font-semibold text-base rounded-md px-6 py-3">
                 Register as Driver
               </button>
             </div>
@@ -114,30 +115,30 @@
             </ul>            
           </div>
 
-           <hr class="lg:hidden inline text-white h-2 p-3 w-full my-10">
+           <hr class="lg:hidden inline h-2 p-3 w-full my-10">
 
           <!-- Right: Quote form -->
 
-          <div class="bg-white/[0.08] border border-white/15 rounded-xl p-6 w-full max-w-md mx-auto">
+          <div class="bg-white/10 border border-white/15 rounded-xl p-6 w-full max-w-md mx-auto">
             
             <form class="flex flex-col gap-3">
 
-              <h3 class="text-white font-bold text-xl mb-1">Get an Instant Quote</h3>
+              <h3 class="font-bold text-xl mb-1">Get an Instant Quote</h3>
 
-              <input type="text" placeholder="Your Name"
-                class="w-full bg-white/10 border border-white/20 rounded-md px-3 py-2.5 text-white placeholder-white/40 text-sm outline-none focus:border-orange-500" />
+              <input type="text" required placeholder="Your Name"
+                class="w-full bg-white/10 border border-white/20 rounded-md px-3 py-2.5 placeholder-white/40 text-sm outline-none focus:border-secondary" />
 
-              <input type="tel" placeholder="Phone Number"
-                class="w-full bg-white/10 border border-white/20 rounded-md px-3 py-2.5 text-white placeholder-white/40 text-sm outline-none focus:border-orange-500" />
+              <input type="tel" required placeholder="Phone Number"
+                class="w-full bg-white/10 border border-white/20 rounded-md px-3 py-2.5 placeholder-white/40 text-sm outline-none focus:border-secondary" />
 
-              <input type="text" placeholder="Truck Type (Dry Van, Flatbed...)"
-                class="w-full bg-white/10 border border-white/20 rounded-md px-3 py-2.5 text-white placeholder-white/40 text-sm outline-none focus:border-orange-500" />
+              <input type="text" required placeholder="Truck Type (Dry Van, Flatbed...)"
+                class="w-full bg-white/10 border border-white/20 rounded-md px-3 py-2.5 placeholder-white/40 text-sm outline-none focus:border-secondary" />
 
-              <input type="text" placeholder="Operating State(s)"
-                class="w-full bg-white/10 border border-white/20 rounded-md px-3 py-2.5 text-white placeholder-white/40 text-sm outline-none focus:border-orange-500" />
+              <input type="text" required placeholder="Operating State(s)"
+                class="w-full bg-white/10 border border-white/20 rounded-md px-3 py-2.5 placeholder-white/40 text-sm outline-none focus:border-secondary" />
 
               <button type="submit"
-                class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-base rounded-md px-6 py-3 mt-1">
+                class="w-full bg-secondary hover:bg-secondary-hover font-bold text-base rounded-md px-6 py-3 mt-1">
                 Request Callback →
               </button>
 
@@ -156,32 +157,165 @@
 
 
             <div class="bg-gray-300/20 text-center py-7 border border-gray-300 rounded-2xl shadow-gray-600/20 shadow-lg">
-                <span class="block text-[#0F2564] font-black text-4xl">500+</span>
+                <span class="block text-primary-dark font-black text-4xl">500+</span>
                 <span class="block text-gray-600 text-xl">Drivers Served</span>
             </div>
 
              <div class="bg-gray-300/20 text-center py-7 border border-gray-300 rounded-2xl shadow-gray-600/20 shadow-lg">
-                <span class="block text-[#0F2564] font-black text-4xl">98%</span>
+                <span class="block text-primary-dark font-black text-4xl">98%</span>
                 <span class="block text-gray-600 text-xl">On-Time Loads</span>
             </div>
 
             <div class="bg-gray-300/20 text-center py-7 border border-gray-300 rounded-2xl shadow-gray-600/20 shadow-lg">
-                <span class="block text-[#0F2564] font-black text-4xl">24/7</span>
+                <span class="block text-primary-dark font-black text-4xl">24/7</span>
                 <span class="block text-gray-600 text-xl">Dispatch Support</span>
             </div>
 
       
             <div class="bg-gray-300/20 text-center py-7 border border-gray-300 rounded-2xl shadow-gray-600/20 shadow-lg">
-                <span class="block text-[#0F2564] font-black text-4xl">12+</span>
+                <span class="block  text-primary-dark font-black text-4xl">12+</span>
                 <span class="block text-gray-600 text-xl">Years Experiences</span>
             </div>
         
         </section>
+      
+
+        <!-- Our Responsibilities -->
         
-        
+        <section id="ourResponsibilitiesCards"
+                class="px-12 py-10 ">
+
+                <span class="text-secondary text-lg font-bold">WHAT WE DO</span>
+                <h3 class="text-primary-dark text-3xl font-extrabold py-2">End-to-End Dispatch Services</h3>
+                <span class="text-secondary text-lg font-normal">Everything a truck driver or fleet needs to run efficiently and profitably.</span>
+
+                <div id="responsibilitiesGrid" class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 py-9">
+
+                  <div class="border-t-6 border rounded-xl border-t-secondary border-secondary/30 flex flex-col justify-start items-start gap-2 p-6">
+
+                       <div class="bg-primary-dark p-3 rounded-2xl">
+                          <i class="fa-solid fa-cube text-5xl"></i>
+                      </div>
+
+                      <h3 class="text-primary text-xl font-semibold">Load Booking</h3>
+                      
+                      <p class="text-primary font-light text-xl">We find and negotiate the best-paying loads from top brokers on your behalf.</p>
+
+                  </div>
+
+                  <div class="border-t-6 border rounded-xl border-t-secondary border-secondary/30 flex flex-col justify-start items-start gap-2 p-6">
+
+                      <div class="bg-primary-dark p-3 rounded-2xl">
+                          <i class="fa-solid fa-route text-5xl"></i>
+                      </div>
+
+                      <h3 class="text-primary text-xl font-semibold">Route Planning</h3>
+                      
+                      <p class="text-primary font-light text-xl">Optimized routes to reduce empty miles and maximize your revenue per mile.</p>
+
+                  </div>
+
+                  <div class="border-t-6 border rounded-xl border-t-secondary border-secondary/30 flex flex-col justify-start items-start gap-2 p-6">
+
+                      <div class="bg-primary-dark p-3 rounded-2xl">
+                          <i class="fa-solid fa-file-lines text-5xl"></i>
+                      </div>
+
+                      <h3 class="text-primary text-xl font-semibold">Documentation</h3>
+                      
+                      <p class="text-primary font-light text-xl">Rate confirmations, BOLs, invoicing and compliance paperwork — all handled.</p>
+
+                  </div>                  
+                  
+                </div>
+
+        </section>
+
+        <!-- 3 simple step to work -->
+
+        <section id="3workingSteps"
+          class="px-12 py-10 bg-text-muted/9 ">
+
+                <span class="text-secondary text-lg font-bold">HOW IT WORKS</span>
+                <h3 class="text-primary-dark text-3xl font-extrabold py-2">Start Earning in 3 Simple Steps</h3>
+                <span class="text-secondary text-lg font-normal">Get dispatched and on the road fast.</span>
+
+                <div id="responsibilitiesGrid" class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 py-9">
+
+                  <div class="flex flex-col justify-center items-center gap-4 p-6">
+
+                       <div class="bg-primary-dark px-7 py-4 rounded-full">
+                        <span class="text-3xl font-extrabold">1</span>
+                      </div>
+
+                      <h3 class="text-primary text-xl font-bold">Register & Submit Docs</h3>
+                      
+                      <p class="text-primary font-normal text-md text-center">Fill out our driver registration form and upload your MC authority and insurance.</p>
+
+                  </div>
+
+                  <div class="flex flex-col justify-center items-center gap-4 p-6">
+
+                       <div class="bg-primary-dark px-7 py-4 rounded-full">
+                        <span class="text-3xl font-extrabold">2</span>
+                      </div>
+
+                      <h3 class="text-primary text-xl font-bold">Get Matched to Loads</h3>
+                      
+                      <p class="text-primary font-normal text-md text-center">Your dedicated dispatcher finds high-paying loads that fit your lanes and equipment.</p>
+
+                  </div>
+
+                  <div class="flex flex-col justify-center items-center gap-4 p-6">
+
+                       <div class="bg-primary-dark px-7 py-4 rounded-full">
+                        <span class="text-3xl font-extrabold">3</span>
+                      </div>
+
+                      <h3 class="text-primary text-xl font-bold">Drive & Get Paid</h3>
+                      
+                      <p class="text-primary font-normal text-md text-center">We handle paperwork and invoicing so you stay focused on delivery.</p>
+
+                  </div>
+    
+
+        </section>
 
       </main>
 
+      <!-- Footer -->
+
+      <footer class="text-white">
+
+            <div class="bg-primary flex flex-col items-center justify-center p-14 gap-4" >
+
+                <h2 class="font-bold text-2xl">Ready to Start? Get Your Free Quote Today.</h2>
+              
+                <p class="text-gray-300/70 font-normal text-xl">Talk to a dispatcher — we respond in under 30 minutes.</p>
+
+                    <div class="flex gap-3">
+                    <button class="bg-secondary hover:bg-secondary-hover  font-bold text-base rounded-md px-6 py-3">
+                      Get Free Quote
+                    </button>
+                    <button class="border border-white/40 hover:bg-text-muted font-semibold text-base rounded-md px-6 py-3">
+                      Register as Driver
+                    </button>
+                  </div>
+
+            </div>
+
+            <div class="bg-primary-dark p-6 flex flex-col items-center sm:flex-row sm:justify-between">
+
+                <a href="#" class="flex gap-2 items-center">
+                  <img class="object-center h-10" src="/Assests/Logo.png" alt="Dispatch Pro">
+                  <Span class="text-lg font-medium font-display text-white">Dispatch Pro</Span>
+                </a>
+
+                <span class="text-gray-300/50">© 2026 DispatchPro. All rights reserved.</span>
+
+            </div>
+
+      </footer>
 
       <script src="/JS/script.js"></script>
 </body>
