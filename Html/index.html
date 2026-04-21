@@ -14,9 +14,9 @@
 
       <!-- Navbar -->
 
-      <nav id="NavBar" class="sticky top-0 p-3 flex items-center justify-between bg-primary shadow-orange-900 shadow-2xl">
+      <nav id="NavBar" class="sticky top-0 p-3 flex items-center justify-between bg-primary shadow-secondary/20 shadow-xl">
          
-          <a href="#" class="flex gap-2 items-center">
+          <a href="/Html/index.html" class="flex gap-2 items-center">
             <img class="object-center h-10" src="/Assests/Logo.png" alt="Dispatch Pro">
             <Span class="text-lg font-medium font-display text-white">Dispatch Pro</Span>
           </a>
@@ -31,11 +31,11 @@
             </ul>
           </div>
 
-          <button id="quoteBtn1" class="hidden md:block 1 bg-secondary hover:bg-secondary-hover hover:font-medium rounded-md px-4 py-2">
+          <a href="/Html/contact.html"><button id="quoteBtn1" class="hidden md:block 1 bg-secondary hover:bg-secondary-hover hover:font-medium rounded-md px-4 py-2">
           <span>Get Quote</span>
           &nbsp;
-          <i class="fa-solid fa-arrow-right"></i></button>
-      
+          <i class="fa-solid fa-arrow-right"></i></button></a>
+
           <button id="showDialogBtn" class="md:hidden"  onclick="handleMenu()">
             <i class="fa-solid fa-bars text-white"></i>
           </button>
@@ -44,7 +44,7 @@
           <div  id="navDialog" class="bg-primary-dark hidden md:hidden z-10 fixed inset-0 p-3  shadow-orange-900 shadow-5xl">
 
               <div id="dialogContent" class="flex justify-between">
-                  <a href="#" class="flex gap-2 items-center">
+                  <a href="/Html/index.html" class="flex gap-2 items-center">
                     <img class="object-center h-10" src="/Assests/Logo.png" alt="Dispatch Pro">
                     <Span class="text-lg font-medium font-display text-white">Dispatch Pro</Span>
                   </a>
@@ -59,17 +59,17 @@
                   <li><a href="/Html/index.html" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary ">Home</a></li>
                   <li><a href="/Html/about.html" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary   ">About Us</a></li>
                   <li><a href="/Html/service.html" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary">Services</a></li>
-                  <li><a href="/Html/service.html" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary ">Pricing</a></li>
+                  <li><a href="/Html/pricing.html" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary ">Pricing</a></li>
                   <li><a href="/Html/contact.html" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary ">Contact</a></li>
                 </ul>
               </div>
 
               <hr class="text-white">
 
-              <button id="quoteBtn2" class="bg-secondary hover:bg-secondary-hover hover:font-medium rounded-md px-4 py-2 mt-5 ml-4">
+              <a href="/Html/contact.html"><button id="quoteBtn2" class="bg-secondary hover:bg-secondary-hover hover:font-medium rounded-md px-4 py-2 mt-5 ml-4">
               <span>Get Quote</span>
               &nbsp;
-              <i class="fa-solid fa-arrow-right"></i></button>
+              <i class="fa-solid fa-arrow-right"></i></button></a>
 
           </div>
 
@@ -80,18 +80,17 @@
        
         <!-- heroSection -->
         <section id="heroSection"   
-          class="bg-primary-deeper min-h-screen flex flex-col gap-14
-            lg:grid grid-cols-2 lg:gap-8 items-center px-12 py-16">
+          class="bg-primary-deeper lg:min-h-screen flex flex-col gap-14 lg:grid grid-cols-2 lg:gap-8 items-center px-[clamp(1rem,5%,2rem)] py-16">
 
           <!-- Left: Text content -->
           <div class="flex flex-col items-start gap-5">
 
-            <span class=" shadow-md hover:shadow-xl shadow-orange-800 hover:shadow-gray-900 bg-text-muted text-primary rounded-full text-sm px-4 py-1 hover:-translate-y-1 transition">
+            <span class=" shadow-md hover:shadow-xl shadow-secondary/90 bg-text-muted text-white rounded-full text-sm px-4 py-1 hover:-translate-y-1 transition">
               24/7 Dispatch Services Available
             </span>
 
-            <h1 class="font-bold text-5xl leading-tight">
-              Professional Truck Dispatching Solutions
+            <h1 class="font-bold text-3xl sm:text-5xl leading-tight">
+              Professional Truck <br class="lg:hidden"> Dispatching Solutions
             </h1>
 
             <p class="text-text-muted text-lg leading-relaxed">
@@ -100,15 +99,16 @@
             </p>
 
             <div class="flex gap-3">
-              <button class="bg-secondary hover:bg-secondary-hover  font-bold text-base rounded-md px-6 py-3">
+
+              <a href="/Html/contact.html"><button class="bg-secondary hover:bg-secondary-hover  font-bold text-base rounded-md px-6 py-3">
                 Get Free Quote
-              </button>
-              <button class="border border-white/40 hover:bg-text-muted font-semibold text-base rounded-md px-6 py-3">
+              </button></a>
+              <a href="/Html/register.html"><button class="border border-white/40 hover:bg-text-muted font-semibold text-base rounded-md px-6 py-3">
                 Register as Driver
-              </button>
+              </button></a>
             </div>
 
-            <ul class="flex gap-8 text-gray-400 text-sm mt-7 ">
+            <ul class="flex flex-col sm:flex-row gap-3 sm:gap-8 text-gray-400 text-lg mt-7 ">
               <li>✓ No setup fees</li>
               <li>✓ Cancel anytime</li>
               <li>✓ Dedicated dispatcher</li>
@@ -183,15 +183,15 @@
         <!-- Our Responsibilities -->
         
         <section id="ourResponsibilitiesCards"
-                class="px-12 py-10 ">
+                class="px-[clamp(1rem,5%,2rem)] py-10 bg-primary-dark/5 border-2 border-y-8 border-primary-dark rounded-2xl mx-[clamp(1rem,5%,2rem)]">
 
                 <span class="text-secondary text-lg font-bold">WHAT WE DO</span>
-                <h3 class="text-primary-dark text-3xl font-extrabold py-2">End-to-End Dispatch Services</h3>
-                <span class="text-secondary text-lg font-normal">Everything a truck driver or fleet needs to run efficiently and profitably.</span>
+                <h3 class="text-primary-dark text-xl sm:text-2xl font-black py-2">End-to-End Dispatch Services</h3>
+                <span class="text-gray-400 text-lg font-normal">Everything a truck driver or fleet needs to run efficiently and profitably.</span>
 
                 <div id="responsibilitiesGrid" class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 py-9">
 
-                  <div class="border-t-6 border rounded-xl border-t-secondary border-secondary/30 flex flex-col justify-start items-start gap-2 p-6">
+                  <div class="border-t-6 rounded-xl border-2 border-secondary flex flex-col justify-start items-start gap-2 p-6">
 
                        <div class="bg-primary-dark p-3 rounded-2xl">
                           <i class="fa-solid fa-cube text-5xl"></i>
@@ -203,7 +203,7 @@
 
                   </div>
 
-                  <div class="border-t-6 border rounded-xl border-t-secondary border-secondary/30 flex flex-col justify-start items-start gap-2 p-6">
+                  <div class="border-t-6 border-2 rounded-xl border-secondary flex flex-col justify-start items-start gap-2 p-6">
 
                       <div class="bg-primary-dark p-3 rounded-2xl">
                           <i class="fa-solid fa-route text-5xl"></i>
@@ -215,7 +215,7 @@
 
                   </div>
 
-                  <div class="border-t-6 border rounded-xl border-t-secondary border-secondary/30 flex flex-col justify-start items-start gap-2 p-6">
+                  <div class="border-t-6 border-2 rounded-xl border-secondary flex flex-col justify-start items-start gap-2 p-6">
 
                       <div class="bg-primary-dark p-3 rounded-2xl">
                           <i class="fa-solid fa-file-lines text-5xl"></i>
@@ -234,7 +234,7 @@
         <!-- 3 simple step to work -->
 
         <section id="3workingSteps"
-          class="px-12 py-10 bg-text-muted/9 ">
+          class="px-[clamp(1.5rem,7%,2rem)] py-10 bg-text-muted/25 mt-20">
 
                 <span class="text-secondary text-lg font-bold">HOW IT WORKS</span>
                 <h3 class="text-primary-dark text-3xl font-extrabold py-2">Start Earning in 3 Simple Steps</h3>
@@ -287,26 +287,28 @@
 
       <footer class="text-white">
 
-            <div class="bg-primary flex flex-col items-center justify-center p-14 gap-4" >
+            <div class="bg-primary flex flex-col items-left sm:items-center justify-center py-14 px-[clamp(1rem,5%,2rem)] gap-4" >
 
-                <h2 class="font-bold text-2xl">Ready to Start? Get Your Free Quote Today.</h2>
+                <h2 class="font-bold text-2xl text-secondary/80">Ready to Start? <br class="sm:hidden"> Get Your Free Quote Today.</h2>
               
                 <p class="text-gray-300/70 font-normal text-xl">Talk to a dispatcher — we respond in under 30 minutes.</p>
 
                     <div class="flex gap-3">
-                    <button class="bg-secondary hover:bg-secondary-hover  font-bold text-base rounded-md px-6 py-3">
+
+                    <a href="/Html/contact.html"><button class="bg-secondary hover:bg-secondary-hover  font-bold text-base rounded-md px-6 py-3">
                       Get Free Quote
-                    </button>
-                    <button class="border border-white/40 hover:bg-text-muted font-semibold text-base rounded-md px-6 py-3">
+                    </button></a>
+
+                    <a href="/Html/register.html"><button class="border border-white/40 hover:bg-text-muted font-semibold text-base rounded-md px-6 py-3">
                       Register as Driver
-                    </button>
+                    </button></a>
                   </div>
 
             </div>
 
-            <div class="bg-primary-dark p-6 flex flex-col items-center sm:flex-row sm:justify-between">
+            <div class="bg-primary-dark p-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
 
-                <a href="#" class="flex gap-2 items-center">
+                <a href="/Html/index.html" class="flex gap-2 items-center">
                   <img class="object-center h-10" src="/Assests/Logo.png" alt="Dispatch Pro">
                   <Span class="text-lg font-medium font-display text-white">Dispatch Pro</Span>
                 </a>

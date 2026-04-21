@@ -14,9 +14,9 @@
 
       <!-- Navbar -->
 
-      <nav id="about_NavBar" class="sticky top-0 p-3 flex items-center justify-between bg-primary shadow-orange-900 shadow-2xl">
+      <nav id="NavBar" class="sticky top-0 p-3 flex items-center justify-between bg-primary shadow-secondary/20 shadow-xl">
          
-          <a href="#" class="flex gap-2 items-center">
+          <a href="/Html/index.html" class="flex gap-2 items-center">
             <img class="object-center h-10" src="/Assests/Logo.png" alt="Dispatch Pro">
             <Span class="text-lg font-medium font-display text-white">Dispatch Pro</Span>
           </a>
@@ -31,11 +31,11 @@
             </ul>
           </div>
 
-          <button id="quoteBtn1" class="hidden md:block 1 bg-secondary hover:bg-secondary-hover hover:font-medium rounded-md px-4 py-2">
+          <a href="/Html/contact.html"><button id="quoteBtn1" class="hidden md:block 1 bg-secondary hover:bg-secondary-hover hover:font-medium rounded-md px-4 py-2">
           <span>Get Quote</span>
           &nbsp;
-          <i class="fa-solid fa-arrow-right"></i></button>
-      
+          <i class="fa-solid fa-arrow-right"></i></button></a>
+
           <button id="showDialogBtn" class="md:hidden"  onclick="handleMenu()">
             <i class="fa-solid fa-bars text-white"></i>
           </button>
@@ -44,12 +44,12 @@
           <div  id="navDialog" class="bg-primary-dark hidden md:hidden z-10 fixed inset-0 p-3  shadow-orange-900 shadow-5xl">
 
               <div id="dialogContent" class="flex justify-between">
-                  <a href="#" class="flex gap-2 items-center">
+                  <a href="/Html/index.html" class="flex gap-2 items-center">
                     <img class="object-center h-10" src="/Assests/Logo.png" alt="Dispatch Pro">
                     <Span class="text-lg font-medium font-display text-white">Dispatch Pro</Span>
                   </a>
 
-                  <button id="about_closeDialogBtn" class="block" onclick="handleMenu()">
+                  <button id="closeDialogBtn" class="block" onclick="handleMenu()">
                         <i class="fa-solid fa-xmark text-white text-2xl"></i>
                   </button>
               </div>
@@ -59,17 +59,17 @@
                   <li><a href="/Html/index.html" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary ">Home</a></li>
                   <li><a href="/Html/about.html" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary   ">About Us</a></li>
                   <li><a href="/Html/service.html" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary">Services</a></li>
-                  <li><a href="/Html/service.html" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary ">Pricing</a></li>
+                  <li><a href="/Html/pricing.html" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary ">Pricing</a></li>
                   <li><a href="/Html/contact.html" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary ">Contact</a></li>
                 </ul>
               </div>
 
               <hr class="text-white">
 
-              <button id="quoteBtn2" class="bg-secondary hover:bg-secondary-hover hover:font-medium rounded-md px-4 py-2 mt-5 ml-4">
+              <a href="/Html/contact.html"><button id="quoteBtn2" class="bg-secondary hover:bg-secondary-hover hover:font-medium rounded-md px-4 py-2 mt-5 ml-4">
               <span>Get Quote</span>
               &nbsp;
-              <i class="fa-solid fa-arrow-right"></i></button>
+              <i class="fa-solid fa-arrow-right"></i></button></a>
 
           </div>
 
@@ -80,20 +80,20 @@
        
         <!-- heroSection -->
         <section id="about_heroSection"   
-          class="bg-primary-deeper px-12 py-16">
+          class="bg-primary-deeper min-h-0 lg:gap-8 items-start px-[clamp(00.5rem,4%,1.5rem)] py-16">
 
-          <div class="flex flex-col items-start sm:items-center justify-center gap-5 px-5">
+          <div class="flex flex-col items-start justify-center gap-8 px-5">
 
-            <span class=" shadow-md hover:shadow-xl shadow-orange-800 hover:shadow-gray-900 bg-text-muted/40 text-gray-400 rounded-full text-lg px-5 py-2 hover:-translate-y-1 transition">
+            <span class="shadow-md hover:shadow-xl shadow-secondary/90 bg-text-muted text-white rounded-full text-sm px-4 py-1 hover:-translate-y-1 transition">
               Who We Are
             </span>
 
-            <h1 class="font-bold text-5xl leading-tight text-start sm:text-center">
+            <h1 class="font-bold text-3xl sm:text-5xl leading-tight text-start">
               Trusted Dispatchers,<br>Built for Drivers
             </h1>
 
-            <p class="text-text-muted text-lg leading-relaxed text-start sm:text-center lg:px-60">
-              DispatchPro has been connecting owner-operators and fleets with high-paying loads since 2012.We work for you — not the brokers.
+            <p class="text-text-muted text-lg leading-relaxed text-start">
+              DispatchPro has been connecting owner-operators and fleets with high-paying loads since 2012.<br> We work for you — not the brokers.
             </p>
             
           </div>
@@ -133,10 +133,10 @@
         <!-- our mission -->
 
         <section id="ourMissionSection"
-          class="px-12 py-10 bg-text-muted/9 grid lg:grid-cols-2 md:grid-cols-1">
+          class="px-[clamp(1rem,5%,2rem)] py-10 bg-text-muted/9 grid lg:grid-cols-2 md:grid-cols-1">
 
-                <div id="about_TeamPhoto" class="flex items-center justify-center bg-gray-300/40 rounded-2xl m-10 ">
-                    <span>Team Photo</span>
+                <div id="about_TeamPhoto" class="flex items-center justify-center bg-gray-300/40 rounded-2xl m-10 p-10 ">
+                    <span class="text-black">Team Photo</span>
                 </div>
                  
                 <div id="ourMission" class="flex flex-col gap-3 bg-gray-300/80 p-10 rounded-2xl">
@@ -145,7 +145,7 @@
                   
                   <h3 class="text-primary-dark text-2xl font-extrabold py-2">We Take the Paperwork. You Take the Wheel.</h3>
                   
-                  <p class="text-secondary text-xl font-normal">Founded in 2012 by a team of logistics professionals, DispatchPro was built with one goal: to help truck drivers maximize their income while we handle all the complexity of load finding, negotiation, and compliance..</p>
+                  <p class="text-gray-500 text-xl font-normal">Founded in 2012 by a team of logistics professionals, DispatchPro was built with one goal: to help truck drivers maximize their income while we handle all the complexity of load finding, negotiation, and compliance..</p>
                   
                   <div class="mt-8">
                       <ul class="flex flex-col gap-4">
@@ -178,35 +178,39 @@
                 </div>
         </section>
 
+
       </main>
 
-      <!-- Footer -->
-
-      <footer class="text-white">
-
-            <div class="bg-primary flex flex-col items-center justify-center p-14 gap-4" >
-
-                <h2 class="font-bold text-2xl">Join 500+ Drivers Who Trust DispatchPro</h2>
               
-                <p class="text-gray-300/70 font-normal text-xl">Start with a free quote — no commitment required.</p>
+        <!-- Footer -->
 
-                <button class="bg-secondary hover:bg-secondary-hover  font-bold text-base rounded-md px-6 py-3">
-                  Get Free Quote
-                </button>
-            </div>
 
-            <div class="bg-primary-dark p-6 flex flex-col items-center sm:flex-row sm:justify-between">
+        <footer class="text-white">
 
-                <a href="#" class="flex gap-2 items-center">
-                  <img class="object-center h-10" src="/Assests/Logo.png" alt="Dispatch Pro">
-                  <Span class="text-lg font-medium font-display text-white">Dispatch Pro</Span>
-                </a>
+              <div class="bg-primary flex flex-col items-left sm:items-center justify-center py-14 px-[clamp(1rem,5%,2rem)] gap-4" >
 
-                <span class="text-gray-300/50">© 2026 DispatchPro. All rights reserved.</span>
+                  <h2 class="font-bold text-2xl text-secondary/80">Join 500+ Drivers <br class="sm:hidden"> Who Trust DispatchPro</h2>
+                
+                  <p class="text-gray-300/70 font-normal text-xl">Start with a free quote — no commitment required.</p>
 
-            </div>
+                  <a href="/Html/contact.html"><button class="bg-secondary hover:bg-secondary-hover  font-bold text-base rounded-md px-6 py-3">
+                    Get Free Quote
+                  </button></a>
+              </div>
 
-      </footer>
+              <div class="bg-primary-dark p-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
+
+                  <a href="#" class="flex gap-2 items-center">
+                    <img class="object-center h-10" src="/Assests/Logo.png" alt="Dispatch Pro">
+                    <Span class="text-lg font-medium font-display text-white">Dispatch Pro</Span>
+                  </a>
+
+                  <span class="text-gray-300/50">© 2026 DispatchPro. All rights reserved.</span>
+
+              </div>
+
+        </footer>
+
 
       <script src="/JS/script.js"></script>
 </body>

@@ -14,9 +14,9 @@
 
       <!-- Navbar -->
 
-      <nav id="about_NavBar" class="sticky top-0 p-3 flex items-center justify-between bg-primary shadow-orange-900 shadow-2xl">
+      <nav id="NavBar" class="sticky top-0 p-3 flex items-center justify-between bg-primary shadow-secondary/20 shadow-xl">
          
-          <a href="#" class="flex gap-2 items-center">
+          <a href="/Html/index.html" class="flex gap-2 items-center">
             <img class="object-center h-10" src="/Assests/Logo.png" alt="Dispatch Pro">
             <Span class="text-lg font-medium font-display text-white">Dispatch Pro</Span>
           </a>
@@ -31,11 +31,11 @@
             </ul>
           </div>
 
-          <button id="quoteBtn1" class="hidden md:block 1 bg-secondary hover:bg-secondary-hover hover:font-medium rounded-md px-4 py-2">
+          <a href="/Html/contact.html"><button id="quoteBtn1" class="hidden md:block 1 bg-secondary hover:bg-secondary-hover hover:font-medium rounded-md px-4 py-2">
           <span>Get Quote</span>
           &nbsp;
-          <i class="fa-solid fa-arrow-right"></i></button>
-      
+          <i class="fa-solid fa-arrow-right"></i></button></a>
+
           <button id="showDialogBtn" class="md:hidden"  onclick="handleMenu()">
             <i class="fa-solid fa-bars text-white"></i>
           </button>
@@ -44,12 +44,12 @@
           <div  id="navDialog" class="bg-primary-dark hidden md:hidden z-10 fixed inset-0 p-3  shadow-orange-900 shadow-5xl">
 
               <div id="dialogContent" class="flex justify-between">
-                  <a href="#" class="flex gap-2 items-center">
+                  <a href="/Html/index.html" class="flex gap-2 items-center">
                     <img class="object-center h-10" src="/Assests/Logo.png" alt="Dispatch Pro">
                     <Span class="text-lg font-medium font-display text-white">Dispatch Pro</Span>
                   </a>
 
-                  <button id="about_closeDialogBtn" class="block" onclick="handleMenu()">
+                  <button id="closeDialogBtn" class="block" onclick="handleMenu()">
                         <i class="fa-solid fa-xmark text-white text-2xl"></i>
                   </button>
               </div>
@@ -59,28 +59,29 @@
                   <li><a href="/Html/index.html" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary ">Home</a></li>
                   <li><a href="/Html/about.html" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary   ">About Us</a></li>
                   <li><a href="/Html/service.html" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary">Services</a></li>
-                  <li><a href="/Html/service.html" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary ">Pricing</a></li>
+                  <li><a href="/Html/pricing.html" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary ">Pricing</a></li>
                   <li><a href="/Html/contact.html" class="text-white font-medium m-3 p-3 rounded block hover:text-gray-300  hover:bg-primary ">Contact</a></li>
                 </ul>
               </div>
 
               <hr class="text-white">
 
-              <button id="quoteBtn2" class="bg-secondary hover:bg-secondary-hover hover:font-medium rounded-md px-4 py-2 mt-5 ml-4">
+              <a href="/Html/contact.html"><button id="quoteBtn2" class="bg-secondary hover:bg-secondary-hover hover:font-medium rounded-md px-4 py-2 mt-5 ml-4">
               <span>Get Quote</span>
               &nbsp;
-              <i class="fa-solid fa-arrow-right"></i></button>
+              <i class="fa-solid fa-arrow-right"></i></button></a>
 
           </div>
 
       </nav>
+
 
       <!-- Main Content -->
       <main class="text-white">
 
         <!-- heroSection -->
         <section id="about_heroSection"   
-          class="bg-primary-deeper px-12 py-16">
+          class="bg-primary-deeper min-h-0 lg:gap-8 items-centerpx-[clamp(1rem,5%,2rem)] py-16">
 
           <div class="flex flex-col items-center justify-center gap-5 px-5">
 
@@ -97,7 +98,7 @@
         <section id="service_ResponsibilitiesCards"
                 class="px-12 py-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
 
-                  <div class="border-t-6 border rounded-xl border-t-secondary border-secondary/30 flex flex-col justify-start items-start gap-2 p-6">
+                  <div class="border-t-6 rounded-xl border-2 border-secondary flex flex-col justify-start items-start gap-2 p-6">
 
                        <div class="bg-primary-dark p-3 rounded-2xl">
                           <i class="fa-solid fa-cube text-5xl"></i>
@@ -109,7 +110,7 @@
 
                   </div>
 
-                  <div class="border-t-6 border rounded-xl border-t-secondary border-secondary/30 flex flex-col justify-start items-start gap-2 p-6">
+                  <div class="border-t-6 rounded-xl border-2 border-secondary flex flex-col justify-start items-start gap-2 p-6">
 
                       <div class="bg-primary-dark p-3 rounded-2xl">
                           <i class="fa-solid fa-route text-5xl"></i>
@@ -121,7 +122,7 @@
 
                   </div>
 
-                  <div class="border-t-6 border rounded-xl border-t-secondary border-secondary/30 flex flex-col justify-start items-start gap-2 p-6">
+                  <div class="border-t-6 rounded-xl border-2 border-secondary flex flex-col justify-start items-start gap-2 p-6">
 
                       <div class="bg-primary-dark p-3 rounded-2xl">
                           <i class="fa-solid fa-file-lines text-5xl"></i>
@@ -133,7 +134,7 @@
 
                   </div>    
                   
-                  <div class="border-t-6 border rounded-xl border-t-secondary border-secondary/30 flex flex-col justify-start items-start gap-2 p-6">
+                  <div class="border-t-6 rounded-xl border-2 border-secondary flex flex-col justify-start items-start gap-2 p-6">
 
                       <div class="bg-primary-dark p-3 rounded-2xl">
                           <i class="fa-solid fa-handshake text-5xl"></i>
@@ -153,21 +154,21 @@
 
       <footer class="text-white">
 
-            <div class="bg-primary flex flex-col items-center justify-center p-14 gap-4" >
+            <div class="bg-primary flex flex-col items-left sm:items-center justify-center py-14 px-[clamp(1rem,5%,2rem)] gap-6" >
 
-                <h2 class="font-bold text-2xl">Ready to Put These Services to Work?</h2>
+                <h2 class="font-bold text-xl sm:text-2xl text-secondary/80">Ready to Put These Services to Work?</h2>
               
                 <p class="text-gray-300/70 font-normal text-xl">Get a free consultation and custom quote for your operation.
                 </p>
 
-                <button class="bg-secondary hover:bg-secondary-hover  font-bold text-base rounded-md px-6 py-3">
+                <a href="/Html/contact.html"><button class="bg-secondary hover:bg-secondary-hover  font-bold text-base rounded-md px-6 py-3">
                   Get Free Quote
-                </button>
+                </button></a>
             </div>
 
-            <div class="bg-primary-dark p-6 flex flex-col items-center sm:flex-row sm:justify-between">
+            <div class="bg-primary-dark p-6 flex flex-col items-center gap-2 sm:flex-row sm:justify-between">
 
-                <a href="#" class="flex gap-2 items-center">
+                <a href="/Html/index.html" class="flex gap-2 items-center">
                   <img class="object-center h-10" src="/Assests/Logo.png" alt="Dispatch Pro">
                   <Span class="text-lg font-medium font-display text-white">Dispatch Pro</Span>
                 </a>
