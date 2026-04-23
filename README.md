@@ -1,17 +1,17 @@
 🚛 Truck Dispatching Business Website
 
-    A responsive, conversion-focused website for a truck dispatching company, built as part of an internship project. The platform is designed to showcase logistics services, generate leads, and provide a smooth user experience for drivers and clients.
+   A responsive, conversion-focused website for a truck dispatching company, built as part of an internship project. The platform is designed to showcase logistics services, generate leads, and provide a smooth user experience for drivers and clients.
 
 
 🌐 Live Demo
 
-    🔗 https://dispatchproo.netlify.app/
+  🔗 https://dispatchproo.netlify.app/
 
 
 📌 Project Overview
 
-    This project focuses on building a **professional multi-page website** for a logistics/dispatching business.
-    The goal was to create a clean UI, strong layout structure, and a user-friendly experience using modern frontend tools.
+  This project focuses on building a **professional multi-page website** for a logistics/dispatching business.
+  The goal was to create a clean UI, strong layout structure, and a user-friendly experience using modern frontend tools.
 
 
 ✨ Features
